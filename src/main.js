@@ -29,7 +29,15 @@ export var router = new VueRouter({
 export default Vue
 
 router.map({
-    '/': {
+    '/' : {
+        name: 'auth.signin',
+        component: SignIn
+    },
+    // '/': {
+    //     name: 'home',
+    //     component: Home
+    // },
+    '/dashboard':{
         name: 'home',
         component: Home
     },

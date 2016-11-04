@@ -34,6 +34,9 @@ export default {
             e.preventDefault()
             auth.signin(this, this)
         }
+    },
+    ready () {
+        auth.check()
     }
 }
 </script>

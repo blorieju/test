@@ -15,6 +15,14 @@ export default {
                 this.user.authenticated = true
                 this.user.profile = response.data.data
             })
+
+            router.go({
+                'name' : 'home'
+            })
+        }else{
+            router.go({
+                'name' : 'auth.signin'
+            })
         }
     },
     signin (context, object){
